@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_consult"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <TabHost 
+        android:id="@+id/tabhost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TabWidget 
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" />
+                <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_above="@android:id/tabs"
+                >
+                <!-- 注意：此处的fragment的第一个字母不要大写，另外：name标签的值为对应的fragment的java类的：包名+类名 -->
+                <fragment 
+                    android:name="com.keita.scutjob.fragment.MessageFragment"
+                    android:id="@+id/frag_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <fragment 
+                    android:name="com.keita.scutjob.fragment.ConsultFragment"
+                    android:id="@+id/frag_consult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                
+            </FrameLayout>
+                
+            
+            
+        </RelativeLayout>
+    </TabHost>
+
+</LinearLayout>

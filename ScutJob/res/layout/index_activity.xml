@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/index_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    <TabHost 
+        android:id="@+id/tabhost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+              	
+                 />
+
+                <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_alignParentTop="true"
+               
+                android:layout_above="@android:id/tabs"
+                >
+             	   <!-- 注意：此处的fragment的第一个字母不要大写，另外：name标签的值为对应的fragment的java类的：包名+类名 -->
+                <!-- <fragment 
+                    android:name="com.example.scutjob.JobFragment"
+                    android:id="@+id/frag_job"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <fragment 
+                    android:name="com.example.scutjob.InterFragment"
+                    android:id="@+id/frag_inter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                 <fragment 
+                    android:name="com.example.scutjob.RemindFragment"
+                    android:id="@+id/frag_remind"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <fragment 
+                    android:name="com.example.scutjob.IndexFragment"
+                    android:id="@+id/frag_index"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />  -->
+             
+            </FrameLayout>
+                 
+            
+            
+        </RelativeLayout>
+    </TabHost>
+
+</LinearLayout>

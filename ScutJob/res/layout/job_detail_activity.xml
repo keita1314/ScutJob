@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+     <RelativeLayout
+         android:id="@+id/deatilHeader"
+         android:layout_width="fill_parent"
+         android:layout_height="40dp"
+         android:background="#1E90FF"
+         android:orientation="vertical" >
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="wrap_content"
+             android:layout_height="fill_parent"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:text="详情"
+             android:textColor="#FFFFFF"
+             android:textSize="20dip" />
+
+         <ImageButton
+             android:id="@+id/jobDetailImageBtn"
+             android:layout_width="30dp"
+             android:layout_height="35dp"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:background="#00000000"
+             android:src="@drawable/return_btn" />
+     </RelativeLayout>
+	
+
+
+	<TableLayout
+	    android:id="@+id/jobDetailTable"
+	    android:layout_below="@+id/deatilHeader"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:shrinkColumns="1"
+    	android:stretchColumns="1" >
+         <ImageView
+          android:id="@+id/topImageView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/job_detail_top"
+          android:scaleType="fitCenter"
+          android:adjustViewBounds="true"/>
+    <TableRow >
+        <TextView 
+            android:layout_column="1"
+            android:text="主题:"
+            
+             />
+        <TextView 
+            android:id="@+id/topicTv"
+   
+            android:gravity="center"
+            />
+    </TableRow>
+        <TableRow >
+        <TextView 
+            android:layout_column="1"
+            android:text="时间:"
+             />
+        <TextView 
+            android:id="@+id/dateTv"
+            android:gravity="center"
+            />
+    </TableRow>
+     <TableRow >
+        <TextView 
+            android:layout_column="1"
+            android:text="地点:"
+             />
+        <TextView 
+            android:id="@+id/locationTv"
+            android:gravity="center"
+            />
+    </TableRow>
+   
+         
+      <TableRow >
+        <TextView 
+            android:layout_column="1"
+            android:text="点击数:"
+             />
+        <TextView 
+            android:id="@+id/readNumTv"
+            android:gravity="center"
+            />
+    	</TableRow>
+	</TableLayout>
+	<LinearLayout 
+	    android:layout_below="@id/jobDetailTable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+          >
+          
+      <com.keita.scutjob.myview.MyImageButton
+          android:id="@+id/shareButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="#00000000"
+          android:src="@drawable/btn"
+          />
+
+      <com.keita.scutjob.myview.MyImageButton
+          android:id="@+id/remindButton"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:background="#00000000"
+          android:src="@drawable/btn"
+           />
+    </LinearLayout>
+</RelativeLayout>

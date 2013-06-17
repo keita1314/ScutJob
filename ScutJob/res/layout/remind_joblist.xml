@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:orientation="horizontal" >
+   <RelativeLayout
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent" >
+          <ImageButton android:id="@+id/remindBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:focusable="false"
+         android:layout_centerVertical="true"
+         android:background="#00000000"/>
+         <LinearLayout
+             android:id="@+id/remindlist"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical"
+             android:layout_toRightOf="@+id/remindBtn" >
+     <TextView android:id="@+id/topic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="22px"/>
+    
+     <TextView android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="13px"/>
+     
+     <TextView android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="13px"/>
+     
+     </LinearLayout>
+     <!-- 
+     <ImageButton android:id="@+id/delItemBtn"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_centerVertical="true"
+         android:src="@drawable/alarm_del"
+         android:focusable="false"
+         android:background="#00000000"/>
+      -->
+     </RelativeLayout>
+   </LinearLayout>
