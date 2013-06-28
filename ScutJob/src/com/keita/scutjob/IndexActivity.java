@@ -34,6 +34,7 @@ public class IndexActivity extends FragmentActivity {
 	protected void onDestroy() {
 		// TODO Auto-generated method stub
 		OffersManager.getInstance(this).onAppExit();
+		//test github
 		super.onDestroy();
 	}
 	@Override

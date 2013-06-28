@@ -51,7 +51,7 @@
              android:name="com.keita.scutjob.MessageConsultActivity"
              />
          <receiver
-             android:name="com.keita.scutjob.receiver.AlarmReceiver"/>
+             android:name="com.keita.scutjob.AlarmReceiver"/>
           
            <!-- 有米传媒 Android SDK 配置(可直接复制节点) -->
         <!-- SDK 必须配置 -->
